@@ -253,3 +253,277 @@ h2[style*="text-align: center"] {
 .col:nth-child(4) .card { animation-delay: 0.4s; }
 .col:nth-child(5) .card { animation-delay: 0.5s; }
 .col:nth-child(6) .card { animation-delay: 0.6s; }
+
+/* ==== BOOK-LIKE READING EXPERIENCE ==== */
+
+/* Book-style page layout */
+.theme-doc-markdown {
+  background: var(--ifm-background-color);
+  padding: 3rem 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+}
+
+[data-theme='dark'] .theme-doc-markdown {
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Book-style headings with decorative elements */
+.markdown h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  border-bottom: 3px solid #6366f1;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.markdown h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #6366f1;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  border-left: 4px solid #6366f1;
+}
+
+[data-theme='dark'] .markdown h2 {
+  color: #a5b4fc;
+  border-left-color: #a5b4fc;
+}
+
+.markdown h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #4f46e5;
+  margin-top: 2rem;
+}
+
+[data-theme='dark'] .markdown h3 {
+  color: #818cf8;
+}
+
+/* Beautiful blockquotes (for important notes) */
+.markdown blockquote {
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(118, 75, 162, 0.1));
+  border-left: 4px solid #6366f1;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+/* Code blocks with book styling */
+.markdown pre {
+  background: #f8fafc !important;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] .markdown pre {
+  background: #0f172a !important;
+  border-color: #334155;
+}
+
+/* Table styling */
+.markdown table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.markdown th {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.markdown td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+[data-theme='dark'] .markdown td {
+  border-bottom-color: #334155;
+}
+
+/* Lists with better spacing */
+.markdown ul li,
+.markdown ol li {
+  margin-bottom: 0.75rem;
+  line-height: 1.8;
+}
+
+/* Emphasis and strong text */
+.markdown strong {
+  color: #6366f1;
+  font-weight: 700;
+}
+
+[data-theme='dark'] .markdown strong {
+  color: #a5b4fc;
+}
+
+/* ==== MOBILE RESPONSIVE DESIGN ==== */
+
+@media (max-width: 996px) {
+  .theme-doc-markdown {
+    padding: 2rem 1.5rem;
+  }
+
+  .markdown h1 {
+    font-size: 2rem;
+  }
+
+  .markdown h2 {
+    font-size: 1.5rem;
+  }
+
+  .markdown h3 {
+    font-size: 1.2rem;
+  }
+
+  .hero__title {
+    font-size: 2rem !important;
+  }
+
+  .hero__subtitle {
+    font-size: 1.2rem !important;
+  }
+
+  .hero--primary {
+    padding: 3rem 1.5rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .theme-doc-markdown {
+    padding: 1.5rem 1rem;
+  }
+
+  .markdown h1 {
+    font-size: 1.75rem;
+  }
+
+  .markdown h2 {
+    font-size: 1.3rem;
+    padding-left: 0.75rem;
+  }
+
+  .markdown h3 {
+    font-size: 1.1rem;
+  }
+
+  .hero__title {
+    font-size: 1.75rem !important;
+  }
+
+  .hero__subtitle {
+    font-size: 1rem !important;
+  }
+
+  .card__header {
+    font-size: 1.2rem !important;
+    padding: 1rem !important;
+  }
+
+  .card__body {
+    padding: 1rem !important;
+  }
+}
+
+/* ==== ENHANCED CHATBOT STYLES ==== */
+
+.chatbot-icon {
+  position: fixed !important;
+  bottom: 2rem !important;
+  right: 2rem !important;
+  width: 65px !important;
+  height: 65px !important;
+  border-radius: 50% !important;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border: none !important;
+  box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4) !important;
+  cursor: pointer !important;
+  color: white !important;
+  font-size: 28px !important;
+  z-index: 9999 !important;
+  transition: all 0.3s ease !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  animation: pulse 2s infinite !important;
+}
+
+.chatbot-icon:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 12px 35px rgba(102, 126, 234, 0.6) !important;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+  }
+  50% {
+    box-shadow: 0 8px 35px rgba(102, 126, 234, 0.6);
+  }
+}
+
+@media (max-width: 576px) {
+  .chatbot-icon {
+    width: 55px !important;
+    height: 55px !important;
+    bottom: 1.5rem !important;
+    right: 1.5rem !important;
+    font-size: 24px !important;
+  }
+}
+
+/* Sidebar book-like navigation */
+.theme-doc-sidebar-menu {
+  padding: 1rem;
+}
+
+.theme-doc-sidebar-item-link {
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.theme-doc-sidebar-item-link:hover {
+  background: rgba(99, 102, 241, 0.1);
+  padding-left: 1.5rem;
+}
+
+.theme-doc-sidebar-item-link-level-1 {
+  font-weight: 600;
+  font-size: 1.05rem;
+}
+
+/* Print-friendly styles */
+@media print {
+  .theme-doc-markdown {
+    box-shadow: none;
+    max-width: 100%;
+  }
+
+  .chatbot-icon {
+    display: none !important;
+  }
+
+  .navbar {
+    display: none !important;
+  }
+
+  .theme-doc-sidebar-container {
+    display: none !important;
+  }
+}
