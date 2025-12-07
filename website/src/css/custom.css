@@ -6,31 +6,31 @@
 
 /* Beautiful modern color scheme */
 :root {
-  --ifm-color-primary: #6366f1;
-  --ifm-color-primary-dark: #4f46e5;
-  --ifm-color-primary-darker: #4338ca;
-  --ifm-color-primary-darkest: #3730a3;
-  --ifm-color-primary-light: #818cf8;
-  --ifm-color-primary-lighter: #a5b4fc;
-  --ifm-color-primary-lightest: #c7d2fe;
+  --ifm-color-primary: #2196F3;
+  --ifm-color-primary-dark: #1976D2;
+  --ifm-color-primary-darker: #1565C0;
+  --ifm-color-primary-darkest: #0D47A1;
+  --ifm-color-primary-light: #42A5F5;
+  --ifm-color-primary-lighter: #64B5F6;
+  --ifm-color-primary-lightest: #90CAF9;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(99, 102, 241, 0.1);
-  --ifm-background-color: #ffffff;
+  --docusaurus-highlighted-code-line-bg: rgba(33, 150, 243, 0.1);
+  --ifm-background-color: #E0F7FA; /* Light theme background - Light Cyan */
   --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 /* Dark mode with attractive colors */
 [data-theme='dark'] {
-  --ifm-color-primary: #818cf8;
-  --ifm-color-primary-dark: #6366f1;
-  --ifm-color-primary-darker: #4f46e5;
-  --ifm-color-primary-darkest: #4338ca;
-  --ifm-color-primary-light: #a5b4fc;
-  --ifm-color-primary-lighter: #c7d2fe;
-  --ifm-color-primary-lightest: #e0e7ff;
+  --ifm-color-primary: #81D4FA;
+  --ifm-color-primary-dark: #4FC3F7;
+  --ifm-color-primary-darker: #29B6F6;
+  --ifm-color-primary-darkest: #039BE5;
+  --ifm-color-primary-light: #B3E5FC;
+  --ifm-color-primary-lighter: #E1F5FE;
+  --ifm-color-primary-lightest: #F5F5F5;
   --docusaurus-highlighted-code-line-bg: rgba(129, 140, 248, 0.15);
-  --ifm-background-color: #0f172a;
-  --ifm-background-surface-color: #1e293b;
+  --ifm-background-color: #1A2B3C;
+  --ifm-background-surface-color: #2C405A;
 }
 
 /* Professional typography and spacing */
@@ -96,7 +96,7 @@ div[class^='codeBlockContainer'] {
 
 /* Hero section with gradient background */
 .hero--primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
   color: white;
   padding: 5rem 2rem !important;
   position: relative;
@@ -493,18 +493,18 @@ h2[style*="text-align: center"] {
 
 /* Make all body text lighter and more readable */
 body {
-  color: #475569 !important; /* Softer than black */
+  color: #333333 !important; /* Dark text for readability */
 }
 
 /* Headings with lighter colors */
 h1, h2, h3, h4, h5, h6 {
-  color: #667eea !important; /* Beautiful purple */
+  color: #222222 !important; /* Darker text for headings */
   font-weight: 700 !important;
 }
 
 /* Paragraph text */
 p, li, td {
-  color: #64748b !important; /* Light slate gray */
+  color: #333333 !important; /* Dark text for readability */
   line-height: 1.8 !important; /* Better readability */
 }
 
@@ -804,7 +804,7 @@ main {
 
 /* STUNNING GRADIENT HERO */
 .hero--primary {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%) !important;
+  background: linear-gradient(135deg, #2196F3 0%, #1976D2 50%, #1565C0 100%) !important;
   min-height: 65vh !important;
   display: flex !important;
   align-items: center !important;
@@ -932,7 +932,7 @@ main {
 }
 
 .card__header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%) !important;
   padding: 2.5rem !important;
   font-size: 2.2rem !important;
   color: white !important;
@@ -1009,7 +1009,7 @@ main {
   width: 75px !important;
   height: 75px !important;
   border-radius: 50% !important;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%) !important;
   box-shadow: 0 15px 50px rgba(102, 126, 234, 0.7),
               0 0 0 0 rgba(102, 126, 234, 0.9) !important;
   animation: pulse-ring 2.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) infinite !important;
