@@ -33,6 +33,33 @@
   --ifm-background-surface-color: #2C405A;
 }
 
+[data-theme='dark'] body {
+  color: #E0E0E0 !important;
+}
+
+[data-theme='dark'] h1,
+[data-theme='dark'] h2,
+[data-theme='dark'] h3,
+[data-theme='dark'] h4,
+[data-theme='dark'] h5,
+[data-theme='dark'] h6 {
+  color: #F5F5F5 !important;
+}
+
+[data-theme='dark'] p,
+[data-theme='dark'] li,
+[data-theme='dark'] td {
+  color: #D0D0D0 !important;
+}
+
+[data-theme='dark'] a {
+  color: #81D4FA !important;
+}
+
+[data-theme='dark'] a:hover {
+  color: #4FC3F7 !important;
+}
+
 /* Professional typography and spacing */
 article {
   max-width: 800px;
@@ -326,8 +353,9 @@ h2[style*="text-align: center"] {
 }
 
 [data-theme='dark'] .markdown pre {
-  background: #0f172a !important;
+  background: #1A2B3C !important;
   border-color: #334155;
+  color: #81D4FA !important;
 }
 
 /* Table styling */
@@ -493,37 +521,37 @@ h2[style*="text-align: center"] {
 
 /* Make all body text lighter and more readable */
 body {
-  color: #333333 !important; /* Dark text for readability */
+  color: #4A4A4A !important; /* Softer dark text for readability */
 }
 
 /* Headings with lighter colors */
 h1, h2, h3, h4, h5, h6 {
-  color: #222222 !important; /* Darker text for headings */
+  color: #333333 !important; /* Darker text for headings */
   font-weight: 700 !important;
 }
 
 /* Paragraph text */
 p, li, td {
-  color: #333333 !important; /* Dark text for readability */
+  color: #555555 !important; /* Softer dark text for readability */
   line-height: 1.8 !important; /* Better readability */
 }
 
 /* Links */
 a {
-  color: #667eea !important;
+  color: #2196F3 !important;
   transition: all 0.3s ease !important;
 }
 
 a:hover {
-  color: #764ba2 !important;
+  color: #1976D2 !important;
   transform: translateX(3px) !important;
   display: inline-block !important;
 }
 
 /* Code blocks */
 code {
-  color: #8b5cf6 !important;
-  background: rgba(102, 126, 234, 0.1) !important;
+  color: #1565C0 !important;
+  background: rgba(33, 150, 243, 0.1) !important;
   padding: 0.2em 0.4em !important;
   border-radius: 4px !important;
 }

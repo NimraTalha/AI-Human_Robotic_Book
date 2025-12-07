@@ -174,6 +174,10 @@ MIT License - See LICENSE file for details
 - Vector search by [Qdrant](https://qdrant.tech/)
 - Embeddings by [sentence-transformers](https://www.sbert.net/)
 
+## ✍️ Authors
+
+- **Nimra Talha** - [GitHub](https://github.com/NimraTalha) - nimratalha@gmail.com
+
 ## 🔧 Development Tools
 
 ### Code Quality
